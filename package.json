@@ -3,20 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --port 8081",
     "build": "vue-cli-service build"
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "iview": "^3.4.2",
+    "single-spa-vue": "^1.5.4",
     "vue": "^2.6.10",
+    "vue-cli-plugin-single-spa": "^1.0.0",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
     "@vue/cli-service": "^3.11.0",
+    "babel-plugin-import": "^1.8.0",
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
+    "vue-cli-plugin-iview": "^1.0.6",
     "vue-template-compiler": "^2.6.10"
   },
   "postcss": {
