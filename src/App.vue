@@ -1,7 +1,6 @@
 <template>
-  <div id="app">
-    <Button type="success">iview的按钮</Button>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div :id="process.env.VUE_APP_NAME">
+    <router-view/>
   </div>
 </template>
 
