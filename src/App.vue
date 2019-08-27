@@ -1,5 +1,5 @@
 <template>
-  <div :id="process.env.VUE_APP_NAME" style="width: 100%;width: 100%">
+  <div :id="appId" style="width: 100%;width: 100%">
     <router-view/>
   </div>
 </template>
@@ -7,7 +7,12 @@
 <script>
 
 export default {
-  name: 'app'
+  name: 'app',
+  data() {
+    return {
+      appId: process.env.VUE_APP_NAME
+    }
+  }
 }
 </script>
 
