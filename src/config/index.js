@@ -1,6 +1,7 @@
 export default {
     baseUrl: {
-        dev: 'https://www.easy-mock.com/mock/5add9213ce4d0e69998a6f51/iview-admin/',
-        pro: 'https://produce.com'
+        dev: 'http://localhost/' + process.env.VUE_APP_NAME,
+        test: 'http://192.168.1.236:8088/' + process.env.VUE_APP_NAME,
+        pro: 'http://10.0.0.56:8088/' + process.env.VUE_APP_NAME
     },
 }

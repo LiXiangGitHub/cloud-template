@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --port 8081",
-    "build": "vue-cli-service build"
+    "build:pro": "vue-cli-service build",
+    "build:test": "vue-cli-service build --mode test"
   },
   "dependencies": {
     "axios": "^0.19.0",
