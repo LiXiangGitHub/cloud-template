@@ -1,7 +1,7 @@
 export default {
     inserted: function (el, binding, vnode) {
         // 获取节点权限id
-        const actionName = binding.arg
+        const actionName = binding.value
         // 取出所有权限
         const buttons = JSON.parse(sessionStorage.getItem('navbar-buttons'))
         const permissions = buttons.map(item => item.resCode)
