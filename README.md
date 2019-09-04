@@ -17,12 +17,12 @@ npm run build
 
 ### Run your tests
 ```
-npm run test
+npm run build:test
 ```
 
-### Lints and fixes files
+### Run your pro
 ```
-npm run lint
+npm run build:pro
 ```
 
 ### Customize configuration
