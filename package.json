@@ -12,6 +12,7 @@
     "clipboard": "^2.0.4",
     "core-js": "^2.6.5",
     "iview": "^3.4.2",
+    "js-cookie": "^2.2.0",
     "single-spa-vue": "^1.5.4",
     "vue": "^2.6.10",
     "vue-cli-plugin-single-spa": "^1.0.0",

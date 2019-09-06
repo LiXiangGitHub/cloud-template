@@ -34,6 +34,18 @@ class HttpRequest {
   interceptors (instance, url) {
     // 请求拦截
     instance.interceptors.request.use(config => {
+
+        // config.headers['X-Token'] = Cookies.get('Admin-Token');// 让每个请求携带token-- ['X-Token']为自定义key 请根据实际情况自行修改
+        if (config.url === '/oauth/token' && config.method === 'post') {
+            config.headers['Content-Type'] = 'application/x-www-form-urlencoded';
+            config.headers['Authorization'] = 'Basic d2ViQXBwOndlYkFwcA==';
+        }
+        else if (config.url === '/oauth/token?access_token='+getToken() && config.method === 'delete') {
+            config.headers['Authorization'] = 'Basic d2ViQXBwOndlYkFwcA==';
+        }else if (config.url !== '/user/trans') {
+            config.headers['Authorization'] = 'bearer '+getToken();
+        }
+
       // 添加全局的loading...
       if (!Object.keys(this.queue).length) {
         // Spin.show() // 不建议开启，因为界面不友好
